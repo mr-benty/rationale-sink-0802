@@ -1,7 +1,7 @@
 name: ci
-on: [push]
+on: [push, pull_request]
 jobs:
   a:
     runs-on: ubuntu-latest
     steps:
-      - run: echo hello
+      - run: echo pr
